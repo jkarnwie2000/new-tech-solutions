@@ -1,0 +1,26 @@
+.techin-error-404{
+    &-wrap{
+        
+    }
+    &-thumb{
+        padding-bottom: 60px;
+        @include max (991px){
+            padding-bottom: 40px;
+        }
+        @include max (767px){
+            padding-bottom: 30px;
+        }
+    }
+    &-content{
+        max-width: 650px;
+        margin: 0 auto;
+        text-align: center;
+        h2{
+            padding-bottom: 12px;
+        }
+        p{
+            margin-bottom: 30px;
+        }
+    }
+    &-wrap{}
+}

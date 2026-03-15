@@ -1,0 +1,180 @@
+.techin-section-padding{
+    padding: 120px 0 190px;
+    @include max (1199px){
+        padding: 120px 0 100px;
+    }
+    @include max (991px){
+        padding: 80px 0;
+    }
+    @include max (767px){
+        padding: 60px 0;
+    }
+}
+.techin-section-padding2{
+    padding: 120px 0 96px;
+    @include max (991px){
+        padding: 80px 0 72px;
+    }
+    @include max (767px){
+        padding: 60px 0 56px;
+    }
+}
+.techin-section-padding3{
+    padding: 120px 0 256px;
+    @include max (991px){
+        padding: 80px 0 72px;
+    }
+    @include max (767px){
+        padding: 60px 0 56px;
+    }
+}
+.techin-section-padding4{
+    padding: 120px 0 315px;
+    @include max (991px){
+        padding: 80px 0 315px;
+    }
+    @include max (767px){
+        padding: 60px 0 315px;
+    }
+}
+.techin-section-padding5{
+    padding: 120px 0 272px;
+    @include max (991px){
+        padding: 80px 0 250px;
+    }
+    @include max (767px){
+        padding: 60px 0 200px;
+    }
+}
+.techin-section-padding6{
+    padding: 120px 0;
+    @include max(991px) {
+      padding: 80px 0;
+    }
+    @include max(767px) {
+      padding: 60px 0;
+    }
+}
+.techin-section-padding7{
+    padding: 0 0 96px;
+    @include max (991px){
+        padding: 0 0 72px;
+    }
+    @include max (767px){
+        padding: 0 0 56px;
+    }
+}
+.techin-section-padding8{
+    padding: 120px 0 200px;
+    @include max (1199px){
+        padding: 120px 0 100px;
+    }
+    @include max (991px){
+        padding: 80px 0;
+    }
+    @include max (767px){
+        padding: 60px 0;
+    }
+}
+.techin-section-padding9{
+    padding: 120px 0 0;
+    @include max (1199px){
+        padding: 120px 0 0;
+    }
+    @include max (991px){
+        padding: 80px 0 0;
+    }
+    @include max (767px){
+        padding: 60px 0 0;
+    }
+}
+.techin-section-padding10{
+    padding: 240px 0 120px;
+   
+    @include max (991px){
+        padding: 240px 0 80px;
+    }
+    @include max (767px){
+        padding: 280px 0 60px;
+    }
+}
+.techin-section-padding11{
+    padding: 120px 0 326px;
+    @include max (991px){
+        padding: 80px 0 250px;
+    }
+    @include max (767px){
+        padding: 60px 0 200px;
+    }
+}
+.techin-section-padding12{
+    padding: 120px 0 280px;
+    @include max (1399px){
+        padding: 120px 0;
+    }
+    @include max (991px){
+        padding: 80px 0;
+    }
+    @include max (767px){
+        padding: 60px 0;
+    }
+}
+
+
+// section title
+
+.techin-section-title{
+    padding-bottom: 50px;
+    @include max (991px){
+        padding-bottom: 40px;
+    }
+
+    h6{
+        color: var(--accent-color);
+    }
+    &.techin-pricing{
+        h2{
+            color: var(--white-color);
+        }
+    }
+    &.center{
+        max-width: 650px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &.version2{
+        h2{
+            color: var(--white-color);
+        }
+    }
+    
+}
+.max-width-645{
+    max-width: 645px;
+}
+.mb-50{
+    margin-bottom: 80px!important;
+    padding: 0;
+    @include max (767px){
+        margin-bottom: 40px!important;
+    }
+}
+.mb-65{
+    margin-bottom: 65px!important;
+    @include max (1570px){
+        margin-bottom: 50px!important;
+    }
+    @include max (1199px){
+        margin-bottom: 40px!important;
+    }
+    @include max (991px){
+        margin-bottom: 50px!important;
+    }
+    @include max (767px){
+        margin-bottom: 30px!important;
+    }
+}
+.section{
+    background-position: center;
+    background-size: cover;
+}

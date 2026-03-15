@@ -1,0 +1,101 @@
+.techin-counter{
+    &-v1{
+        background-position: center;
+        background-size: cover;
+    }
+    &-column{
+        gap: 100px;
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        @include max(1199px) {
+            gap: 24px;
+        }
+        @include max(991px) {
+            gap: 40px;
+            row-gap: 16px;
+            grid-template-columns:1fr 1fr;
+        }
+        @include max(575px) {
+            grid-template-columns:1fr;
+            
+        }
+
+       
+    }
+    &-wrap{
+        border-radius: 20px;
+        transition: all 0.4s;
+        background: var(--white-bg);
+        text-align: center!important;
+        padding: 40px;
+        margin-bottom: 24px;
+        width: 100%;
+        &:hover{
+            .techin-counter-icon{
+                background: var(--accent-bg2);
+                transform: rotateY(180deg);
+            }
+        }
+        &.wrap2{
+            padding: 48px 18px;
+            @include max (991px){
+                padding: 40px 70px;
+            }
+        }
+    }
+    &-icon{
+        width: 100px;
+        height: 100px;
+        display: flex;
+        transition: all 0.4s;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        margin: 0 auto 30px;
+        background: var(--accent-bg);
+        @include max (767px){
+            margin: 0 auto 20px;
+        }
+    }
+    &-data{
+        p{
+            font-weight: 700;
+            font-family: $heading-font;
+        }
+    }
+    &-number{
+        font-family: $heading-font;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1.25em;
+        color: var(--heading-color);
+        padding-bottom: 2px;
+    }
+    // end one
+    &-content{
+        h2{
+            color: var(--white-color);
+            @include max (1199px){
+                max-width: 500px;
+            }
+        }
+        @include max (1199px){
+            margin-bottom: 60px;
+        }
+    }
+    &-author{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding-top: 40px;
+        @include max (991px){
+            padding-top: 30px;
+        }
+    }
+    &-author-text{
+        h6{
+            color: var(--white-color);
+        }
+    }
+}

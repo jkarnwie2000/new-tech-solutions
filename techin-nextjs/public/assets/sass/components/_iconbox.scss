@@ -1,0 +1,116 @@
+.techin-iconbox{
+    &-wraper {
+        display: flex;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        justify-content: space-between;
+        @include max(767px){
+            flex-wrap: wrap;
+            gap: 24px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+
+    &-wrap{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        @include max(767px) {
+            max-width: 300px;
+        }
+    }
+    &-icon{
+        flex-shrink: 0;
+    }
+    &-wrap2-item1{
+        padding: 40px;
+        border-radius: 20px;
+        position: relative;
+        margin-bottom: 24px;
+        background-size: 100% 100%;
+        background-color: var(--light-color);
+        @include max(991px) {
+            padding: 50px 30px 30px;
+        }
+        &.bg-two{
+            background-color: var(--white-bg);
+        }
+    }
+    &-title-wrap2 {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding-bottom: 24px;
+    }
+    &-title-thumb{
+        padding: 40px;
+        @include max (1450px){
+            padding: 30px;
+        }
+        @include max (1199px){
+            padding: 30px;
+            margin-top: 100px;
+            display: none;
+        }
+      
+    }
+    &-title-icon{
+        width: 70px;
+        height: 70px;
+        display: flex;
+        flex-shrink: 0;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--accent-bg);
+    }
+    &-title-text{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    &-number {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        border-radius: 100px;
+ 
+        &.icon2{
+            border: 6px solid var(--light-color);
+        }
+    }
+    // start contact us page
+    &-contact-wrap{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding-bottom: 30px;
+        &:last-child{
+            padding-bottom: 0;
+        }
+    }
+    
+    &-contact-icon{
+        flex-shrink: 0;
+    }
+    &-contact-data{
+        h5{
+            color: var(--white-color);
+            padding-bottom: 5px;
+        }
+        p{
+            color: var(--white-color);
+        }
+    }
+}
+.item{
+    background-color: var(--white-bg);
+}
+.mb-0{
+    @include max (767px){
+        margin-bottom: 0;
+    }
+}
+.pb-30{
+    padding-bottom: 30px!important;
+}

@@ -1,0 +1,228 @@
+.techin-appointment{
+    &-box {
+        padding: 70px 60px;
+        border-radius: 20px;
+        background-color: var(--white-bg);
+        position: relative;
+        &.box-2{
+            background-color: var(--light-color);
+        }
+        &.box-3{
+            background-color: var(--light-color);
+            padding: 60px;
+            margin-top: 50px;
+            @include max (991px){
+                margin-top: 40px;
+            }
+            @include max (767px){
+                padding: 30px;
+                margin-top: 40px;
+            }
+        }
+        @include max (991px){
+            margin-top: 50px;
+        }
+        @include max (767px){
+            padding: 30px;
+            margin-top: 40px;
+        }
+        ul.nav{
+            background: var(--accent-bg);
+            border-radius: 6px;
+            padding: 7px 0;
+            transition: all .4s;
+            margin-top: 30px;
+            &:hover{
+                background-color: var(--heading-color);
+            }
+        }
+    }
+    &-title{
+        text-align: center;
+        padding-bottom: 50px;
+        @include max (991px){
+            padding-bottom: 40px;
+        }
+    }
+    &-content{
+        padding-left: 50px;
+        @include max (991px){
+            padding-left: 0px;
+        }
+        .text{
+            padding: 40px 0 30px 0;
+            @include max (767px){
+                padding: 30px 0 30px 0;
+            }
+            margin: 0;
+        }
+    }
+    &-info{
+        margin-bottom: 30px;
+        @include max (767px){
+            padding-top: 0!important;
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+        .techin-about-info-icon{
+            flex-shrink: 0;
+            img{
+                width: 80px;
+                height: 80px;
+                @include max (767px){
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+        }
+    }
+    // end one
+    &-title2{
+        padding-top: 88px;
+        h2{
+            color: var(--white-color);
+        }
+        @include max (991px){
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+    // end two
+    &-box-bg{
+        margin-top: -160px;
+        padding: 50px 50px 0;
+        position: relative;
+        border-radius: 20px 20px 0 0;
+        background-color: var(--white-bg);
+        @include max (1199px){
+            padding: 40px 40px 0;
+        }
+        @include max (767px){
+            padding: 30px 30px 0;
+            margin-top: -310px;
+        }
+    }
+    &-box3{
+        border-radius: 20px;
+        background-color: #2F2BEB;
+        padding: 50px 50px 26px 50px;
+        @include max (1199px){
+            padding: 40px 40px 16px 40px;           
+        }
+        
+        @include max (767px){
+            padding: 30px;           
+        }
+    }
+}
+.mt-30{
+    margin-top: 30px;
+}
+.mt-0{
+    margin-top: 0px;
+}
+.techin-main{
+    &-field{
+        position: relative;
+        margin-bottom: 20px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        img{
+            position: absolute;
+            top: 23px;
+            right: 20px;
+        }
+        input{
+            font-size: 14px;
+            line-height: 1.71em;
+            padding: 18px 40px 18px 30px!important;
+            border-radius: 6px!important;
+            background-color: var(--light-color)!important;
+        }
+        &-textarea{
+            textarea{
+                background-color: var(--light-color)!important;
+                border-radius: 6px;
+                padding: 18px 40px 18px 30px!important;
+                height: 60px;
+                font-size: 14px;
+                line-height: 1.71em;
+            }
+            &.textarea2 .button-text{
+                background-color: var(--white-bg)!important;
+            }
+            &.textarea2 .button-text2{
+                border: 1px solid var(--light-color2);
+                background-color: var(--white-bg)!important;
+                height: 140px;
+            }
+        }
+        &.field2{
+            input{
+                background-color: var(--white-bg)!important;
+                cursor: pointer;
+            }
+        }
+        &.field3{
+            margin-bottom: 20px!important;
+        }
+        &.field5{
+            input{
+                color: var(--body-color);
+                cursor: pointer;
+            }
+            img{
+                cursor: pointer;
+            }
+        }
+    }
+}
+.pr-50{
+    padding-right: 50px;
+    @include max (991px){
+        padding-right: 0;
+    }
+}
+.field4{
+    input{
+        border: 1px solid var(--light-color2)!important;
+        background-color: var(--white-bg)!important;
+        margin-bottom: 24px!important;
+    }
+}
+.mb-20{
+    margin-bottom: 20px!important;
+    input{
+        padding: 18px 15px 18px 20px !important;
+    }
+}
+#techin-submit-btn{
+    width: 100%!important;
+    justify-content: center;
+}
+.techin-apoontment-section{
+    padding: 80px 0 0;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    @include max (767px){
+        padding: 60px 0 0;
+    }
+    &::before{
+        content: "";
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 120px;
+        position: absolute;
+        background-color: var(--white-bg);
+        @include max (767px){
+            padding: 60px 0;
+            height: 0;
+        }
+    }
+    
+
+}

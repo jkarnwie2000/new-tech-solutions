@@ -1,0 +1,65 @@
+.techin-contact-us{
+    &-thumb{
+        @include max (991px){
+            padding-bottom: 40px;
+        }
+        @include max (767px){
+            padding-bottom: 30px;
+        }
+    }
+    &-map{
+        width: 100%;
+        height: 750px;
+        @include max (991px){
+            height: 745px;
+        }
+        @include max (767px){
+            height: 735px;
+        }
+    }
+    &-info{
+        width: 430px;
+        height: auto;
+        padding: 97px 40px;
+        position: absolute;
+        top: 0;
+        background: linear-gradient(90deg, #1B1885 0%, #2F2BEB 44%, #1B1885 100%);
+        z-index: 1;
+        @include max (575px){
+            width: 100%;
+            padding: 40px;
+            position: inherit;
+            margin-top: 30px;
+            border-radius: 4px;
+        }
+    }
+    &-title{
+        padding-bottom: 40px;
+        @include max (767px){
+            padding-bottom: 30px;
+        }
+        h3{
+            color: var(--white-color);
+        }
+    }
+}
+.responsive-map{
+    position: relative;
+    z-index: -1;
+}
+.shape-up {
+    position: absolute;
+    top: 0;
+    right: 0;
+    @include max (767px){
+        display: none;
+    }
+}
+.shape-down {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    @include max (767px){
+        display: none;
+    }
+}

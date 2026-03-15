@@ -1,0 +1,86 @@
+ 
+
+const menu_data = [
+	{
+		title: "Demo",
+		has_dropdown: true,
+		link: "#",
+		sub_menus: [
+			{ link: "/", title: "Home Page 01" },
+			{ link: "/home-2", title: "Home Page 02" },
+			{ link: "/home-3", title: "Home Page 03" },
+		],
+	},
+	{
+		title: "Pages",
+		has_dropdown: true,
+		link: "#",
+		sub_menus: [
+			{ title: "About Us", link: "/about-us", has_inner_dropdown: false },
+			{ title: "Pricing", link: "/pricing", has_inner_dropdown: false },
+			{
+				title: "Blog",
+				has_inner_dropdown: true,
+				link: "#",
+				sub_menus: [
+					{ title: "Blog", link: "/blog" },
+					{ title: "Blog Grid", link: "/blog-grid" },
+					{ title: "Blog Details", link: "/single-blog" },
+				],
+			},
+			{
+				title: "Portfolio",
+				has_inner_dropdown: true,
+				link: "#",
+				sub_menus: [
+					{ title: "Portfolio", link: "/portfolio" },
+					{ title: "Portfolio Details", link: "/single-portfolio" },
+				],
+			},
+			{
+				title: "Team",
+				has_inner_dropdown: true,
+				link: "#",
+				sub_menus: [
+					{ title: "Team", link: "/team" },
+					{ title: "Team Details", link: "/single-team" },
+				],
+			},
+			{
+				title: "Utility",
+				has_inner_dropdown: true,
+				link: "#",
+				sub_menus: [
+					{ title: "FAQ", link: "/faq" },
+					{ title: "Error 404", link: "/errors-404" },
+				],
+			},
+		],
+	},
+	{
+		title: "Service",
+		has_dropdown: true,
+		link: "#",
+		sub_menus: [
+			{ title: "Service", link: "/service" },
+			{ title: "Service Details", link: "/single-service" },
+		],
+	},
+	{
+		title: "Blog",
+		has_dropdown: true,
+		link: "#",
+		sub_menus: [
+			{ title: "Blog", link: "/blog" },
+			{ title: "Blog Grid", link: "/blog-grid" },
+			{ title: "Blog Details", link: "/single-blog" },
+		],
+	},
+	{
+		title: "Contact Us",
+		has_dropdown: false,
+		link: "/contact-us",
+	},
+];
+
+export default menu_data;
